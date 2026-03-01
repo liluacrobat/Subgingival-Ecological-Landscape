@@ -4,4 +4,5 @@ The computational framework integrates:
 	•	Unsupervised feature selection  
 	•	Nonlinear manifold reconstruction (DDRTree principal-tree learning)  
 	•	Spectral clustering  
+	
 The pipeline was developed to identify discrete microbiome states embedded within continuous ecological transitions from eubiosis to dysbiosis in a large population-based cohort.
