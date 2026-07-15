@@ -11,6 +11,7 @@ The pipeline was developed to identify discrete microbiome states embedded withi
 
 ```text
 .
+├── demo_run.m            Demo analysis
 ├── run_landscape.m       Main analysis function
 ├── config_example.m      User-editable configuration
 ├── data/                 Input data directory; data are not distributed
