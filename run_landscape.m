@@ -288,7 +288,7 @@ view(-83,11)
 set(gca,'FontSize',18);
 savefig(gcf, fullfile(config.output_dir, 'subgingival_landscape.fig'));
 keyboard
-exportgraphics(gcf, fullfile(config.output_dir, 'subgingival_landscape.pdf'));
+exportgraphics(gcf, fullfile(config.output_dir, 'subgingival_landscape.pdf'),'Resolution',600);
 end
 
 function plot_tree_edges(principal_tree, edges)
