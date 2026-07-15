@@ -277,15 +277,18 @@ facecolorGroup = [0	0.776470588	0
 1	0.149019608	0
 0.650980392	0.466666667	0.156862745
 0.5	0.5	0.5];
-for i=1:max(cluster_labels)
+for i=1:max(results.cluster_labels)
     header{i} = ['Cluster ' num2str(i)];
 end
 plotDDRtree(results.projection, results.principal_tree, results.edges, results.cluster_labels, header,facecolorGroup);
 title('MIP subgingival microbiome landscape');
-colorbar('Ticks', 1:config.clustering.number_of_clusters);
-exportgraphics(gcf, fullfile(config.output_dir, 'subgingival_landscape.pdf'), ...
-    'ContentType', 'vector');
-close(gcf);
+pbaspect([1 2 1]);
+axis([10 70 -50.0000 40.0000 -30.0000 30.0000]);
+view(-83,11)
+set(gca,'FontSize',18);
+savefig(gcf, fullfile(config.output_dir, 'subgingival_landscape.fig'));
+keyboard
+exportgraphics(gcf, fullfile(config.output_dir, 'subgingival_landscape.pdf'));
 end
 
 function plot_tree_edges(principal_tree, edges)
