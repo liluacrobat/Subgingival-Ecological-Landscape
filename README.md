@@ -115,7 +115,7 @@ The species analysis requires numeric sample-by-variable tables of host metadata
 
 The cluster analysis requires host metadata and numeric cluster membership coding, with one indicator column per cluster (one-hot encoded).
 
-The small tables in `rCCA/Data/` illustrate the format...
+The small tables in `rCCA/Data/` illustrate the format.
 
 
 ### Running the R analyses
