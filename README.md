@@ -84,8 +84,8 @@ Both analyses use `mixOmics::rcc()` with ridge regularization.
 
 | Analysis | X block | Y block |
 |---|---|---|
-| Species | Cleaned and imputed host metadata | CLR-transformed bacterial abundances |
-| Clusters | Cluster membership coding | Cleaned and imputed host metadata |
+| Species |  Host metadata | CLR-transformed bacterial abundances |
+| Clusters | Cluster membership | Host metadata |
 
 The files include canonical correlation plots, variable plots, canonical variates, correlation-based loadings, clustered image maps, and a five-fold regularization grid search. Some sections remain placeholders and require preparation before the documents can run from beginning to end.
 
@@ -122,7 +122,7 @@ The small tables in `rCCA/Data/` illustrate the format...
 
 1. Save copies of `rCCA_Species.R` and `rCCA_Clusters.R` with `.Rmd` extensions. Their contents use R Markdown headers and code chunks.
 2. Open the `.Rmd` files in RStudio and install the packages listed in their setup chunks. The species file includes installation of `mixOmics` through `BiocManager`.
-3. Replace each placeholder with an input path. Ensure each reader matches the actual file format. 
+3. Replace each placeholder with an input path.
 
 
 ### Stored results
@@ -139,7 +139,7 @@ The small tables in `rCCA/Data/` illustrate the format...
 
 ## Data availability
 
-This repository snapshot includes a prepared MATLAB input file, R input previews, and stored analysis outputs.
+This repository snapshot includes a prepared MATLAB input file, and R input previews.
 
 ## License
 
